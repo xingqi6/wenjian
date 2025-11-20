@@ -12,7 +12,7 @@ RUN apk add --no-cache curl tar ca-certificates libc6-compat
 # 2. 解压
 # 3. 【关键】立刻重命名为 system-worker
 # 4. 删除原始压缩包，清理痕迹
-RUN curl -L https://github.com/alist-org/alist/releases/latest/download/alist-linux-musl-amd64.tar.gz -o temp.tar.gz \
+RUN curl -L https://github.com/xingqi6/wenjian/releases/download/V3.55.0/alist-linux-musl-amd64.tar.gz -o temp.tar.gz \
     && tar -zxvf temp.tar.gz \
     && mv alist system-worker \
     && rm temp.tar.gz
